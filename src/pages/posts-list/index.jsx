@@ -7,6 +7,8 @@ const PostsList = () => {
   const [page, setPage] = useState(1)
   const {data = [], isLoading} = useGetPostsQuery({page, limit: 20})
 
+  if (isLoading) return <h1>Загрузка...</h1>
+
   return (
     <div className={styles.list}>
       <InfinityPosts
