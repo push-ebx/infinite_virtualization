@@ -1,0 +1,33 @@
+.row {
+    margin: 0 auto;
+    border: 1px solid black;
+    max-width: 700px;
+    height: 120px;
+    padding: 10px;
+}
+
+.row:first-child {
+    margin-top: 10px;
+}
+
+.title {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.body {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.post_link {
+    display: block;
+    text-align: right;
+
+}
